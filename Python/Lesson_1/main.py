@@ -11,5 +11,5 @@ def salesman(number):
 num = int(input("Введите ваш возраст: "))
 answer = salesman(num)
 
-print(answer)
+print(f"Ответ: {answer}")
 
