@@ -8,7 +8,6 @@
 #
 # for i in range(1, 11):
 #     print(i)
-from copy import deepcopy
 
 # def salesman(number):
 #     if number > 18:
