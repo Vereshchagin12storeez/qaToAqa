@@ -1,21 +1,20 @@
 import pytest
+import allure
 
 
 @pytest.fixture
-def setup_teardown_fixture1(teardown_fixture3):
-    print("Начало выполнение автотеста1.")
+def setup_and_teardown_fixture():
+    with allure.step("Начало выполнение автотеста."):
+        print("Начало выполнение автотеста.")
     yield
+    with allure.step("Конец выполнение автотеста."):
+        print("Конец выполнение автотеста.")
 
 
-@pytest.fixture
-def setup_fixture2():
-    print("Начало выполнение автотеста2.")
-
-
-@pytest.fixture
-def teardown_fixture3():
-    yield
-    print("Конец выполнение автотеста3.")
+# @pytest.fixture
+# def teardown_fixture():
+#     yield
+#     print("Конец выполнение автотеста3.")
 
 
 @pytest.fixture
