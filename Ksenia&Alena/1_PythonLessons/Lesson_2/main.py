@@ -69,6 +69,8 @@ st = {1, 3, 5, "12345"}
 
 dct = {"key": "value", "key1": "value1"}
 
+# print(dct["key"])
+
 # dct.update({"key1": 32536})
 # print(dct)
 
