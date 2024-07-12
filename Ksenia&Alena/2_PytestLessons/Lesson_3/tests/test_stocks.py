@@ -41,7 +41,7 @@ def test_get_products_list():
     check_result = check_article(product_lst, article)  # Проверка наличия элемента в списке(массиве)
     assert check_result
 
-    assert isinstance(article, str)  # Проверка что элемент на тип данных
+    assert isinstance(article, str)  # Проверка элемента на тип данных
 
     assert len(product_lst) == 50  # Проверка длины списка(массива)
 
