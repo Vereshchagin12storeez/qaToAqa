@@ -23,9 +23,10 @@ response0 = requests.request(method="GET",
                              headers=headers,
                              data=payload)
 
-response1 = requests.get(url=url,
-                         headers=headers,
-                         data=payload)
+# response1 = requests.get(url=url,
+#                          headers=headers,
+#                          data=payload)
 
-pprint(response0.text)
-# pprint(response1.text)
+# pprint(response0.text)
+pprint(response0.json())
+# pprint(response0.status_code)
